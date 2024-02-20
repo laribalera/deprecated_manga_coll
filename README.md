@@ -1,20 +1,20 @@
-# Manga Coll
+# 🧚  Manga Coll 🧝‍♀️
 
 Este repositório contém uma aplicação em construção para gerenciamento de uma coleção pessoal de mangás.
 
-## Funcionalidades
+## ⚙️ Funcionalidades
 
 - Listagem da Coleção
 - Adicionar volume
 - Atualizar informações de um volume
 - Deletar um volume
 
-## Pré-requisitos
+## 📑 Pré-requisitos
 
 - Flask
 - csv
   
-## Instalação
+## 🖥️ Instalação
 
 1. Clone o repositório em sua máquina local:
 
@@ -22,11 +22,11 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
     git clone https://github.com/baleralarissa/manga_coll.git
     ```
 
-## Uso
+## 🖥️ Uso
 
 - Utiliza dados de um arquivo csv com as colunas volume,titulo,author,status. 
 
-## TO-DO
+## 🛠️ TO-DO
 
 [] Front end: Melhorar visual da página
 [] Integração com GoogleSheets para substituir o csv.
