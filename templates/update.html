@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Entry</title>
+</head>
+<body>
+    <h2>Update Entry</h2>
+    <form action="{{ url_for('update', row_id=row_id) }}" method="post">
+        <label for="volume">Volume:</label>
+        <input type="text" name="volume" value="{{ entry['volume'] }}" required>
+        <label for="titulo">Titulo:</label>
+        <input type="text" name="titulo" value="{{ entry['titulo'] }}" required>
+        <label for="author">Author:</label>
+        <input type="text" name="author" value="{{ entry['author'] }}" required>
+        <label for="status">Status:</label>
+        <input type="text" name="status" value="{{ entry['status'] }}" required>
+        <button type="submit">Update Entry</button>
+    </form>
+</body>
+</html>
