@@ -28,8 +28,8 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 
 ## 🛠️ TO-DO
 
-[] Front end: Melhorar visual da página
-[] Integração com GoogleSheets para substituir o csv.
+[ ] Front end: Melhorar visual da página
+[ ] Integração com GoogleSheets para substituir o csv.
   
 ## Autores
 
