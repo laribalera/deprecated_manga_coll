@@ -28,9 +28,9 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 
 ## Atualizações
 
-- [ x ] Front end: Melhorar visual da página
-- [ x ] Adicionado outro csv com resumo da coleção
-- [ x ] Fix da stylesheet que não carregava no html
+- [x] Front end: Melhorar visual da página
+- [x] Adicionado outro csv com resumo da coleção
+- [x] Fix da stylesheet que não carregava no html
 
 ## 🛠️ TO-DO
 
