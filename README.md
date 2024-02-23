@@ -32,7 +32,7 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 - [x] Adicionado outro csv com resumo da coleção
 - [x] Fix da stylesheet que não carregava no html
 - [x] Alterar forms para adicionar linhas na tabela a partir dos dados inputados (EX: informar coleção de 20 volumes e as 20 linhas serem criadas em loop. Atualmente é inputado 1 por 1)
-- [ ] 
+
 ## 🛠️ TO-DO
 
 - [ ] Front end: Melhorar MAIS AINDA o visual da página
