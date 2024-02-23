@@ -45,13 +45,17 @@ def index():
 @app.route('/add', methods=['POST'])
 def add():
     data = load_data_volumes()
-    new_entry = {
-        'volume': request.form['volume'],
-        'titulo': request.form['titulo'],
-        'author': request.form['author'],
-        'status': request.form['status'],
-    }
-    data.append(new_entry)
+    volume = int(request.form['volume'])  # Convertendo para inteiro
+
+    for vol in range(1, volume + 1):
+        new_entry = {
+            'volume': vol,
+            'titulo': request.form['titulo'],
+            'author': request.form['author'],
+            'status': request.form['status'],
+        }
+        data.append(new_entry)
+
     save_data(data)
     return redirect(url_for('index'))
 
