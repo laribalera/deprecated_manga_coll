@@ -40,6 +40,7 @@ Este repositório contém uma aplicação em construção para gerenciamento de 
 - [ ] Front end: Criar novo formulario para alimentar tabela de resumo + tabela de volumes
 - [ ] Criar função para atualizar o andamento da coleção (%) e adicionar append na tabela de resumo
 - [ ] Integração com GoogleSheets para substituir o csv.
+- [ ] Terminar formulario e modal
   
 ## Autores
 
