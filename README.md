@@ -1,5 +1,7 @@
 # 🧚  Manga Coll 🧝‍♀️
 
+# Este projeto foi descontinuado e substituido pelo https://github.com/baleralarissa/manga_coll_new.git
+
 Este repositório contém uma aplicação em construção para gerenciamento de uma coleção pessoal de mangás.
 
 ## ⚙️ Funcionalidades
