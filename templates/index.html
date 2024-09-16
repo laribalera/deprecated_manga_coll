@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,19 @@
 
     <title>Coleção de Mangás da Larissa</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <link href="static/style.css" rel="stylesheet">
-    
+
 </head>
 
 <body>
     <div class="container">
         <h1 class="main-titulo">Coleção de Mangás da Larissa</h1>
-          
+
         <div class="div-style">
             <h3 class="sub-titulos">Resumo da coleção</h3>
             <table class="table table-resumo">
@@ -45,19 +50,61 @@
             <br>
             <br>
 
-            <h3 class="sub-titulos">Adicionar Nova Coleção</h2>
-            <form action="{{ url_for('add') }}" method="post">
-                <label for="volume">Volumes</label>
-                <input type="text" name="volume" required>
-                <label for="titulo">Título</label>
-                <input type="text" name="titulo" required>
-                <label for="author">Autor</label>
-                <input type="text" name="author" required>
-                <label for="status">Status</label>
-                <input type="text" name="status" required>
-                <button type="submit">Adicionar</button>
-            </form>
-            
+
+
+
+
+
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Nova Coleção
+            </button>
+
+            <div class="modal fade" id="exampleModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="sub-titulos">Adicionar nova coleção</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-style" action="{{ url_for('add') }}" method="post">
+                                <div class="form-group">
+                                    <label for="volumes">Volumes</label>
+                                    <input type="number" class="form-control" name="volume" placeholder="Volumes">
+                                </div>
+                                <div class="form-group">
+                                    <label for="titulo">Título</label>
+                                    <input type="text" class="form-control" name="titulo" placeholder="Título">
+                                </div>
+                                <div class="form-group">
+                                    <label for="autor">Autor</label>
+                                    <input type="text" class="form-control" name="author" placeholder="Autor">
+                                </div>
+                                <div class="form-group">
+                                    <label for="status">Status</label>
+                                    <select class="form-control" name="status">
+                                        <option>Comprado</option>
+                                        <option>Faltando</option>
+                                        <option>OK</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipo">Tipo</label>
+                                    <select class="form-control" id="tipo">
+                                        <option>Regular</option>
+                                        <option>Edição Especial</option>
+                                        <option>Volume Único</option>
+                                    </select>
+                                </div>
+                                <br><br>
+                                <button type="submit" >Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
         <div class="div-style">
@@ -68,11 +115,11 @@
                         <th scope="col">Volume</th>
                         <th scope="col">Titulo</th>
                         <th scope="col">Author</th>
-                        <th scope="col">Status</th> 
+                        <th scope="col">Status</th>
                         <th scope="col">Actions</th>
                     </tr>
                 </thead>
-                
+
                 <tbody>
                     {% for entry in volumes_data %}
                     <tr>
@@ -86,7 +133,7 @@
                         </td>
                     </tr>
                     {% endfor %}
-            </tbody>
+                </tbody>
             </table>
 
             <div class="div-pag" id="pag">
@@ -96,8 +143,8 @@
                     <button id="next">Próximo</button>
                 </div>
             </div>
-            
-            
+
+
         </div>
     </div>
 
@@ -157,4 +204,5 @@
         loadData();
     </script>
 </body>
+
 </html>
